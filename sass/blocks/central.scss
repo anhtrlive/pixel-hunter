@@ -1,0 +1,15 @@
+/*
+ * Стили для основного блока
+ */
+
+.central {
+  margin: 0 auto;
+  position: relative;
+  max-width: 1000px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 30px;
+  min-height: 740px;
+}

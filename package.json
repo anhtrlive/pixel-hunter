@@ -1,0 +1,48 @@
+{
+  "name": "PixelHunter",
+  "version": "5.0.0",
+  "private": true,
+  "description": "Личный проект «Пиксель хантер»",
+  "scripts": {
+    "eslint": "eslint ./gulpfile.js js/**/*.js",
+    "stylelint": "stylelint 'sass/**/*.scss' --syntax scss",
+    "build": "gulp build",
+    "start": "gulp serve",
+    "test": "npm run eslint && npm run stylelint && gulp test"
+  },
+  "devDependencies": {
+    "@babel/core": "7.9.6",
+    "@babel/preset-env": "7.9.6",
+    "autoprefixer": "9.0.2",
+    "browser-sync": "^2.26.7",
+    "chai": "4.2.0",
+    "css-mqpacker": "7.0.0",
+    "del": "3.0.0",
+    "eslint": "5.7.0",
+    "eslint-config-htmlacademy": "0.5.x",
+    "gulp": "3.9.1",
+    "gulp-better-rollup": "^4.0.1",
+    "gulp-csso": "3.0.1",
+    "gulp-imagemin": "4.1.0",
+    "gulp-mocha": "7.0.2",
+    "gulp-plumber": "1.2.0",
+    "gulp-postcss": "7.0.1",
+    "gulp-rename": "1.4.0",
+    "gulp-sass": "4.0.1",
+    "gulp-sourcemaps": "2.6.5",
+    "gulp-svgstore": "6.1.1",
+    "rollup": "^1.32.1",
+    "rollup-plugin-babel": "4.4.0",
+    "rollup-plugin-commonjs": "10.1.0",
+    "stylelint": "9.4.x",
+    "stylelint-config-htmlacademy": "^0.1.4"
+  },
+  "engines": {
+    "node": "10"
+  },
+  "dependencies": {
+    "@babel/polyfill": "7.8.7",
+    "babel-polyfill": "6.26.0",
+    "eslint-auto-fix": "^1.0.1"
+  }
+}
