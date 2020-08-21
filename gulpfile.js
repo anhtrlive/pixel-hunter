@@ -14,7 +14,6 @@ const rollup = require(`gulp-better-rollup`);
 const sourcemaps = require(`gulp-sourcemaps`);
 const mocha = require(`gulp-mocha`);
 const commonjs = require(`rollup-plugin-commonjs`);
-const gulp = require('gulp');
 const deploy = require('gulp-gh-pages');
 
 gulp.task(`style`, () => {
@@ -136,6 +135,6 @@ gulp.task(`test`, function () {
  * Push build to gh-pages
  */
 gulp.task('deploy', function () {
-  return gulp.src("./dist/**/*")
+  return gulp.src("./build/**/*")
     .pipe(deploy())
 });
